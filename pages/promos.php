@@ -1,6 +1,6 @@
 <main>
     <h1>NOS PROMOTIONS</h1>
-    <section>
+    <section class="gridPromos">
         <?php
         foreach ($products as $product) :
             if ($product['promotion'] === true) {
@@ -11,8 +11,8 @@
                     <h3><?php echo $product["designation"] ?></h3>
                     <h4><?php echo $product["modele"] ?></h4>
                     <div>
-                        <p> <?php echo $product["prixBeforePomo"] . "€" ?></p>
-                        <p><?php echo " - " . $product["prix"] ?>€</p>
+                        <p class="before"> <?php echo $product["prixBeforePomo"] . "€" ?></p>
+                        <p class="after"><?php echo "/" . $product["prix"] ?>€</p>
                     </div>
                 </article>
         <?php }

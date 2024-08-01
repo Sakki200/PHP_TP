@@ -5,12 +5,15 @@
 
             <div class="productFlex">
                 <figure><img src="<?php echo "./img/" . $product["image"] ?>" alt="image du produit <?php $product["modele"] ?>"></figure>
-                <div>
-                    <h3>Categorie</h3>
-                    <h4><?php echo $product["categorie"] ?></h4>
+                <div class="detailsProduct">
+                    <h3><?php echo strtoupper($product["modele"]) ?></h3>
+                    <h4>Categorie</h4>
+                    <h3><?php echo ucfirst($product["categorie"]) ?></h3>
                     <?php if ($product['promotion'] === true) {
-                    ?> <p class="afterPromo"><?php echo $product["prix"] . "€" ?></p>
-                        <p class="beforePromo"><?php echo $product["prixBeforePomo"] . "€" ?></p>
+                    ?> <div>
+                            <p class="beforePromo"><?php echo $product["prixBeforePomo"] . "€" ?></p>
+                            <p class="afterPromo">/<?php echo $product["prix"] . "€" ?></p>
+                        </div>
                     <?php
                     } else {
                     ?> <p class="afterPromo"><?php echo $product["prix"] . "€" ?></p>

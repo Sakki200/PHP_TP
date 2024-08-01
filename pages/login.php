@@ -1,5 +1,6 @@
 <main>
-    <section>
+<h1>CONNEXION</h1>
+    <section class="login">
         <form method="POST">
             <label for="pseudo">Pseudo</label>
             <input type="text" name="pseudo" id="pseudo" required>

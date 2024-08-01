@@ -1,17 +1,14 @@
 <?php
-$number1 = rand(1, 30);
-$number2 = rand(1, 30);
-$number3 = rand(1, 30);
-$number4 = rand(1, 30);
-$number5 = rand(1, 30);
-$number6 = rand(1, 30);
+//Tableau de nombres aléatoires de 1 => 30 et mélanger
+$numbers = range(1, 30);
+shuffle($numbers);
 
-echo $number1;
-echo $number2;
-echo $number3;
-echo $number4;
-echo $number5;
-echo $number6;
+$number1 = $numbers[0];
+$number2 = $numbers[1];
+$number3 = $numbers[2];
+$number4 = $numbers[3];
+$number5 = $numbers[4];
+$number6 = $numbers[5];
 ?>
 <main>
     <h1>ACCUEIL</h1>
