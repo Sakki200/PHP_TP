@@ -31,5 +31,5 @@ $products = [
     => false, 'image' => 'popSheHulk.jpg'], ['id' => 28, 'designation' => 'manette', 'categorie' => 'manette', 'modele' => 'Switch Pro', 'prix' => 45, 'prixBeforePomo' => 49, 'promotion'
     => true, 'image' => 'switchPro.webp'], ['id' => 29, 'designation' => 'souris', 'categorie' => 'peripherique', 'modele' => 'Razer Basilisk X HyperSpeed', 'prix' => 120, 'prixBeforePomo' => 120, 'promotion'
     => false, 'image' => 'razerBasilisk.jpg'], ['id' => 30, 'designation' => 'clavier', 'categorie' => 'peripherique', 'modele' => 'Steelseries Apex Pro', 'prix' => 219, 'prixBeforePomo' => 250, 'promotion'
-    => true, 'image' => 'steelseriesApex.jpg']
+    => true, 'image' => 'steelseriesApex.webp']
 ];

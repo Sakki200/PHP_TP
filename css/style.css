@@ -1,1 +1,92 @@
 @import url(./reset.css);
+* {
+  font-family: "Raleway";
+}
+
+body {
+  & header {
+    background-color: rgb(247, 239, 230);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & nav {
+      margin: auto;
+      & ul {
+        display: flex;
+        gap: 2rem;
+        & li {
+          font-size: 2rem;
+          &:hover {
+            color: rgb(164, 164, 164);
+          }
+        }
+      }
+    }
+  }
+  & h1 {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(247, 224, 193);
+    margin-bottom: 2.4rem;
+  }
+  & main {
+    & .gridArticles {
+      width: 75%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      & article {
+        position: relative;
+        border: solid rgb(255, 192, 91) 0.15rem;
+        border-radius: 0.4rem;
+
+        & .promoDisplay {
+          border-radius: 0.4rem;
+          padding: 0.4rem;
+          position: absolute;
+          background-color: rgb(204, 142, 62);
+          color: white;
+          top: 0.8rem;
+          right: 0.8rem;
+        }
+        & h3 {
+          padding-left: 4rem;
+          text-align: start;
+          font-size: 1.6rem;
+        }
+        & h4 {
+          padding-left: 4rem;
+          text-align: start;
+          font-size: 2.4rem;
+        }
+        & p {
+          padding-right: 4rem;
+          text-align: end;
+          color: rgb(255, 192, 91);
+          font-weight: 700;
+          font-size: 4rem;
+          margin-bottom: 2.4rem;
+        }
+
+        & figure {
+          margin: auto;
+          height: 25rem;
+          aspect-ratio: 1/1;
+        }
+      }
+    }
+  }
+  & footer {
+    margin-top: 4rem;
+    background-color: rgb(247, 239, 230);
+    height: 6rem;
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
